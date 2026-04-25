@@ -1,0 +1,21 @@
+{
+  "name": "technical-news-hub",
+  "version": "1.0.0",
+  "description": "Final application build for the Technical News Hub SRS project.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "news"
+  ],
+  "author": "Technical News Hub Team",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  }
+}
