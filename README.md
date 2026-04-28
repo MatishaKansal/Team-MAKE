@@ -37,27 +37,6 @@ On Windows, you can also double-click `START_TECHNICAL_NEWS_HUB.bat` from the ex
 - Username: `admin`
 - Password: `admin123`
 
-## Optional Live News
-
-To connect live NewsAPI data, create a `.env` file in the project folder:
-
-```text
-NEWS_API_KEY=your_newsapi_key_here
-AUTO_SYNC_ENABLED=true
-AUTO_SYNC_SOURCE=all-technology
-AUTO_SYNC_HOURS=0,8,16
-```
-
-Then restart the server.
-
-Automatic sync runs three times per day by default at local time `00:00`, `08:00`, and `16:00`.
-
-- `AUTO_SYNC_ENABLED`: set to `false` to disable automation.
-- `AUTO_SYNC_SOURCE`: choose any source id from the app (for example `all-technology`, `bbc-news`, `techcrunch`, `the-verge`, `ars-technica`).
-- `AUTO_SYNC_HOURS`: comma-separated local hours (0-23). Keep exactly three values for 3 runs/day.
-
-You can still trigger a manual import from the Admin dashboard at any time.
-
 ## MongoDB Storage
 
 By default, the app uses the local JSON cache at `data/db.json`.
